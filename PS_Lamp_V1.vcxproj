@@ -74,10 +74,10 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\utils;C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;C:\Users\Vejron\Documents\Arduino\PS_Lamp_V1;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sw32zxqh.i0p\Micro Platforms\default\debuggers;C:\Users\Vejron\Documents\Arduino\libraries;C:\Users\Vejron\Documents\Arduino\PS_Lamp_abb;C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\AccelStepper;C:\Users\Vejron\Documents\Arduino\libraries\ArduinoJson\src;C:\Users\Vejron\Documents\Arduino\libraries\espduino;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\OctoWS2811;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sw32zxqh.i0p\Micro Platforms\default\debuggers\VM_DBG;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sw32zxqh.i0p\Micro Platforms\default\debuggers;C:\Users\Vejron\Documents\Arduino\libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>C:\Users\Vejron\Documents\Arduino\PS_Lamp_V1\__vm\.PS_Lamp_V1.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalIncludeDirectories>C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\utils;C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr;C:\Users\Vejron\Documents\Arduino\PS_Lamp;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\AccelStepper;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\AccelStepper\utility;C:\Users\Vejron\Documents\Arduino\libraries\ArduinoJson\src;C:\Users\Vejron\Documents\Arduino\libraries\ArduinoJson\src\utility;C:\Users\Vejron\Documents\Arduino\libraries\espduino;C:\Users\Vejron\Documents\Arduino\libraries\espduino\utility;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\utility;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\OctoWS2811;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\OctoWS2811\utility;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sw32zxqh.i0p\Micro Platforms\default\debuggers;C:\Users\Vejron\Documents\Arduino\libraries;C:\Users\Vejron\Documents\Arduino\PS_Lamp;C:\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\AccelStepper;C:\Users\Vejron\Documents\Arduino\libraries\ArduinoJson\src;C:\Users\Vejron\Documents\Arduino\libraries\espduino;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\OctoWS2811;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sw32zxqh.i0p\Micro Platforms\default\debuggers\VM_DBG;C:\Program Files (x86)\Arduino\libraries;C:\Program Files (x86)\Arduino\hardware\teensy\avr\libraries;C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\sw32zxqh.i0p\Micro Platforms\default\debuggers;C:\Users\Vejron\Documents\Arduino\libraries;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>C:\Users\Vejron\Documents\Arduino\PS_Lamp\__vm\.PS_Lamp.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <IgnoreStandardIncludePath>true</IgnoreStandardIncludePath>
-      <PreprocessorDefinitions>__MK20DX256__;TEENSYDUINO=125;ARDUINO=165;F_CPU=96000000;ARDUINO_ARCH_AVR;USB_SERIAL;LAYOUT_US_ENGLISH;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_VMDEBUG=1;__MK20DX256__;TEENSYDUINO=125;ARDUINO=165;F_CPU=96000000;ARDUINO_ARCH_AVR;USB_SERIAL;LAYOUT_US_ENGLISH;__cplusplus;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -127,18 +127,186 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\memcpy-armv7m.S" />
     <None Include="PS_Lamp_V1.ino">
       <FileType>CppCode</FileType>
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Arduino.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\arm_common_tables.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\arm_math.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\AudioStream.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\eeprom.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\interrupt.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\io.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\pgmspace.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\power.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\sleep.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr\wdt.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr_emulation.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr_functions.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\binary.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Client.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\core_cm4.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\core_cm4_simd.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\core_cmInstr.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\core_id.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\core_pins.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\DMAChannel.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\elapsedMillis.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\HardwareSerial.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\IntervalTimer.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\IPAddress.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\keylayouts.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\kinetis.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\math_helper.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\mk20dx128.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\new.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\pins_arduino.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Print.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Printable.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Server.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\ser_print.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\SPIFIFO.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Stream.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Udp.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_desc.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_dev.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_flightsim.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_joystick.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_keyboard.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_mem.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_midi.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_mouse.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_names.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_rawhid.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_seremu.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_serial.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_undef.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util\atomic.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util\crc16.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util\delay.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\util\parity.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\WCharacter.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\WConstants.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\wiring.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\wiring_private.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\WProgram.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\WString.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\AccelStepper\AccelStepper.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\bitswap.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\chipsets.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\color.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\colorpalettes.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\colorutils.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\controller.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\dmx.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\FastLED.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastled_config.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastled_delay.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastled_progmem.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastpin.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastspi.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastspi_bitbang.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastspi_dma.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastspi_nop.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastspi_ref.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\fastspi_types.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\hsv2rgb.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\led_sysdefs.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\lib8tion.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\noise.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\pixeltypes.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\platforms.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\power_mgt.h" />
+    <ClInclude Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\OctoWS2811\OctoWS2811.h" />
+    <ClInclude Include="..\libraries\ArduinoJson\src\ArduinoJson.h" />
+    <ClInclude Include="..\libraries\espduino\crc16.h" />
+    <ClInclude Include="..\libraries\espduino\espduino.h" />
+    <ClInclude Include="..\libraries\espduino\FP.h" />
+    <ClInclude Include="..\libraries\espduino\mqtt.h" />
+    <ClInclude Include="..\libraries\espduino\rest.h" />
+    <ClInclude Include="..\libraries\espduino\ringbuf.h" />
     <ClInclude Include="PS_Animator.h" />
     <ClInclude Include="PS_Bulb.h" />
     <ClInclude Include="PS_Data.h" />
     <ClInclude Include="PS_Settings.h" />
     <ClInclude Include="PS_WifiController.h" />
     <ClInclude Include="PS_Winch.h" />
+    <ClInclude Include="__vm\.PS_Lamp.vsarduino.h" />
     <ClInclude Include="__vm\.PS_Lamp_V1.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\analog.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\AudioStream.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\avr_emulation.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\DMAChannel.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\eeprom.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\HardwareSerial1.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\HardwareSerial2.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\HardwareSerial3.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\IntervalTimer.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\IPAddress.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\keylayouts.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\main.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\math_helper.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\mk20dx128.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\new.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\nonstd.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\pins_teensy.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Print.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\serial1.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\serial2.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\serial3.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\ser_print.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Stream.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\Tone.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\touch.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_desc.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_dev.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_flightsim.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_inst.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_joystick.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_keyboard.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_mem.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_midi.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_mouse.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_rawhid.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_seremu.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\usb_serial.c" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\WMath.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\WString.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\cores\teensy3\yield.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\AccelStepper\AccelStepper.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\colorpalettes.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\colorutils.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\FastLED.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\hsv2rgb.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\lib8tion.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\noise.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\power_mgt.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\FastLED\wiring.cpp" />
+    <ClCompile Include="..\..\..\..\..\Program Files (x86)\Arduino\hardware\teensy\avr\libraries\OctoWS2811\OctoWS2811.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Arduino\Print.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Arduino\String.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\Comments.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\Encoding.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\IndentedPrint.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\JsonParser.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\List.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\Prettyfier.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\Internals\StaticStringBuilder.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\JsonArray.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\JsonBuffer.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\JsonObject.cpp" />
+    <ClCompile Include="..\libraries\ArduinoJson\src\JsonVariant.cpp" />
+    <ClCompile Include="..\libraries\espduino\crc16.c" />
+    <ClCompile Include="..\libraries\espduino\espduino.cpp" />
+    <ClCompile Include="..\libraries\espduino\FP.cpp" />
+    <ClCompile Include="..\libraries\espduino\mqtt.cpp" />
+    <ClCompile Include="..\libraries\espduino\rest.cpp" />
+    <ClCompile Include="..\libraries\espduino\ringbuf.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

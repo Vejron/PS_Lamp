@@ -45,6 +45,7 @@ class Winch
       // set default values
       _stepper.setMaxSpeed(800.0);
       _stepper.setAcceleration(500.0);
+	  _stepper.disableOutputs();
       
       _calibrated = true; 
     }
@@ -61,6 +62,7 @@ class Winch
       if(_calibrated && target >= -STEPPER_MIN && target <= 0) // Has to be calibrated and within limits
       {
         _target = target;
+		_stepper.enableOutputs();
         _stepper.moveTo(_target);
       }
 	  else
@@ -82,7 +84,11 @@ class Winch
    
       if(_calibrated)
       {
-        _stepper.run();
+		  if (!_stepper.run())
+		  {
+			  //at target, disable motor to make it less hot
+			  _stepper.disableOutputs();
+		  }
       }
     }
 };
